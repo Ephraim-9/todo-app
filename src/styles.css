@@ -1,0 +1,15 @@
+html {
+    background: radial-gradient(circle, rgb(0, 0, 0) 46%, rgb(0, 0, 36) 100%);
+
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    font-size: 3rem;
+    color: rgb(0, 0, 155);
+    font-weight: 900;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
