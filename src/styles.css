@@ -2,14 +2,22 @@ html {
     background: radial-gradient(circle, rgb(0, 0, 0) 46%, rgb(0, 0, 36) 100%);
 
 }
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.content {
+    display: flex;
+}
+
 header {
     font-size: 3rem;
-    color: rgb(0, 0, 155);
+    color: white;
     font-weight: 900;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 2%;
 }

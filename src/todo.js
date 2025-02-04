@@ -1,7 +1,7 @@
 import { storeTodo } from "./storage"
 
-export default function makeTodo (name, date, desc) {
-    const todo = {name, date, desc}
+export default function makeTodo (sentTodo) {
+    const todo = {sentTodo}
 
     storeTodo(todo)
 }
