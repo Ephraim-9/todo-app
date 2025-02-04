@@ -1,11 +1,7 @@
-export default function makeTodo () {
-    todosArr = [] 
+import { storeTodo } from "./storage"
 
-    const todos = document.getElementById('todos')
+export default function makeTodo (name, date, desc) {
+    const todo = {name, date, desc}
 
-    //get todo data with form
-
-    //push form data to todo arr
-
-    //send todoarr to the dom func
+    storeTodo(todo)
 }
