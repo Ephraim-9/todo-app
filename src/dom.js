@@ -15,3 +15,22 @@ export function getFormData () {
         makeTodo({name, date, desc})
     })
 }
+
+export function renderTodo (todoArr) {
+    const todoDiv = document.getElementById('todos')
+    todoDiv.innerHTML = ''
+
+    todoArr.forEach(todo => {
+        const todoItem = document.createElement('div');
+        todoItem.classList.add('todo-item');
+        todoItem.innerHTML = `
+            <h3>${todo.name}</h3>
+            <p>Due: ${todo.date}</p>
+            <p>${todo.desc}</p>
+        `;
+        // console.log(`${todo.name}`)
+        // console.log(todoArr)
+        todoDiv.appendChild(todoItem);
+    });
+
+}

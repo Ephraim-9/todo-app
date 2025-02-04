@@ -1,3 +1,5 @@
+import { renderTodo } from "./dom";
+
 const todosArr = []
 
 export function storeTodo (todo) {
@@ -9,4 +11,5 @@ export function storeTodo (todo) {
     const sotoredTodosArr = JSON.parse(sotoredTodos);
 
     console.log(sotoredTodosArr)
+    renderTodo(sotoredTodosArr)
 }
