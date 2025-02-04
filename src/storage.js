@@ -10,6 +10,5 @@ export function storeTodo (todo) {
     const sotoredTodos = localStorage.getItem('todos')
     const sotoredTodosArr = JSON.parse(sotoredTodos);
 
-    console.log(sotoredTodosArr)
     renderTodo(sotoredTodosArr)
 }

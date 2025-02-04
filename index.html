@@ -8,21 +8,27 @@
 <body>
     <header>Todo List</header>
     <div class="content">
-        <div class="contentHeader">Today</div>
         <div class="addTodo">
             <form id="todo-form">
-                <label for="task-name">Task Name: </label>
-                <input type="text" id="task-name" name="task-name" required>
+                <div class="name">
+                    <label for="task-name">Task Name: </label>
+                    <input type="text" id="task-name" name="task-name" required>
+                </div>
 
-                <label for="due-date">Due Date: </label>
-                <input type="datetime-local" id="due-date" name="due-date" required>
+                <div class="date">
+                    <label for="due-date">Due Date: </label>
+                    <input type="datetime-local" id="due-date" name="due-date" required>
+                </div>
 
-                <label for="task-desc">Task Desc: </label>
-                <input type="text" id="task-desc" name="task-desc" required>
+                <div class="text">
+                    <label for="task-desc">Task Desc: </label>
+                    <input type="text" id="task-desc" name="task-desc" required>
+                </div>
 
                 <button type="submit">Add Task</button>
             </form>
         </div>
+        <h1>Today</h1>
         <div id="todos"></div>
     </div>
 </body>
