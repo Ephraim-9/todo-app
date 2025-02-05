@@ -28,8 +28,6 @@ export function renderTodo (todoArr) {
             <p>Due: ${todo.date}</p>
             <p>${todo.desc}</p>
         `;
-        // console.log(`${todo.name}`)
-        // console.log(todoArr)
         todoDiv.appendChild(todoItem);
     });
 

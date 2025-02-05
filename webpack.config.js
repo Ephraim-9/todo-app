@@ -30,5 +30,10 @@ module.exports = {
     hot: true,
     port: 3000,
     open: true
-  }
+  },
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '', // Ensures assets load correctly
+  },
 };
