@@ -1,80 +1,79 @@
 html {
-    background: radial-gradient(circle, rgb(0, 0, 0) 46%, rgb(0, 0, 36) 100%);
-
+  background: radial-gradient(circle, rgb(0, 0, 0) 46%, rgb(0, 0, 36) 100%);
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header {
-    font-size: 3rem;
-    font-weight: 900;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-bottom: 2%;
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 2%;
 }
 
 .addTodo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #todo-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 20%;
 }
 
 #todo-form > * {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5% 0;
-    gap: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0;
+  gap: 2%;
 }
 
 input {
-    height: 2%;
+  height: 2%;
 }
 
 h1 {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 #todos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 97%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 97%;
 }
 
 h3 {
-    font-size: 4rem;
-    margin: 0;
+  font-size: 4rem;
+  margin: 0;
 }
 
 .todo-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: clamp(100px, 90%, 300px);
-    gap: 2%;
-    border: solid white 3px;
-    border-radius: 25px;
-    margin: 5%;
-    padding: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: clamp(100px, 90%, 300px);
+  gap: 2%;
+  border: solid white 3px;
+  border-radius: 25px;
+  margin: 5%;
+  padding: 3%;
 }

@@ -1,35 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo App</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>Todo List</header>
     <div class="content">
-        <div class="addTodo">
-            <form id="todo-form">
-                <div class="name">
-                    <label for="task-name">Task Name: </label>
-                    <input type="text" id="task-name" name="task-name" required>
-                </div>
+      <div class="addTodo">
+        <form id="todo-form">
+          <div class="name">
+            <label for="task-name">Task Name: </label>
+            <input type="text" id="task-name" name="task-name" required />
+          </div>
 
-                <div class="date">
-                    <label for="due-date">Due Date: </label>
-                    <input type="datetime-local" id="due-date" name="due-date" required>
-                </div>
+          <div class="date">
+            <label for="due-date">Due Date: </label>
+            <input
+              type="datetime-local"
+              id="due-date"
+              name="due-date"
+              required
+            />
+          </div>
 
-                <div class="text">
-                    <label for="task-desc">Task Desc: </label>
-                    <input type="text" id="task-desc" name="task-desc" required>
-                </div>
+          <div class="text">
+            <label for="task-desc">Task Desc: </label>
+            <input type="text" id="task-desc" name="task-desc" required />
+          </div>
 
-                <button type="submit">Add Task</button>
-            </form>
-        </div>
-        <h1>Today</h1>
-        <div id="todos"></div>
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+      <h1>Today</h1>
+      <div id="todos"></div>
     </div>
-</body>
+  </body>
 </html>

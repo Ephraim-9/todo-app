@@ -12,16 +12,16 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Todo App',
-      template: 'index.html'
-    })
+      template: 'index.html',
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   devServer: {
     static: {
@@ -29,7 +29,7 @@ module.exports = {
     },
     hot: true,
     port: 3000,
-    open: true
+    open: true,
   },
   output: {
     filename: 'main.js',

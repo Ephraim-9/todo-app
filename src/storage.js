@@ -1,14 +1,14 @@
-import { renderTodo } from "./dom";
+import { renderTodo } from './dom';
 
-const todosArr = []
+const todosArr = [];
 
-export function storeTodo (todo) {
-    todosArr.push(todo)
+export function storeTodo(todo) {
+  todosArr.push(todo);
 
-    localStorage.setItem('todos', JSON.stringify(todosArr));
+  localStorage.setItem('todos', JSON.stringify(todosArr));
 
-    const sotoredTodos = localStorage.getItem('todos')
-    const sotoredTodosArr = JSON.parse(sotoredTodos);
+  const sotoredTodos = localStorage.getItem('todos');
+  const sotoredTodosArr = JSON.parse(sotoredTodos);
 
-    renderTodo(sotoredTodosArr)
+  renderTodo(sotoredTodosArr);
 }
