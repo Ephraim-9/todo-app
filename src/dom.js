@@ -1,4 +1,5 @@
 import makeTodo from './todo';
+import makeProj from './project';
 
 export function getFormData() {
   const form = document.getElementById('todo-form');
@@ -9,8 +10,10 @@ export function getFormData() {
     const name = form.elements['task-name'].value;
     const date = form.elements['due-date'].value;
     const desc = form.elements['task-desc'].value;
+    const proj = form.elements['project-name'].value;
 
-    makeTodo({ name, date, desc });
+    makeTodo(name, date, desc);
+    makeProj(proj);
   });
 }
 
