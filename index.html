@@ -11,14 +11,19 @@
       <div class="addTodo">
         <form id="todo-form">
           <div class="name">
-            <label for="task-name">Task Name: </label>
+            <label for="task-name">Task: </label>
             <input type="text" id="task-name" name="task-name" required />
           </div>
 
+          <div class="project">
+            <label for="project-name">Project: </label>
+            <input type="text" id="project-name" name="project-name" value="home" required>
+          </div>
+
           <div class="date">
-            <label for="due-date">Due Date: </label>
+            <label for="due-date">Due: </label>
             <input
-              type="datetime-local"
+              type="date"
               id="due-date"
               name="due-date"
               required
@@ -26,7 +31,7 @@
           </div>
 
           <div class="text">
-            <label for="task-desc">Task Desc: </label>
+            <label for="task-desc">Description: </label>
             <input type="text" id="task-desc" name="task-desc" required />
           </div>
 
