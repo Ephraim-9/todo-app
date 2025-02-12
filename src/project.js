@@ -1,6 +1,6 @@
-export default function makeProj(sentProj) {
+export default function makeProj(projectName) {
   return {
-    name: sentProj,
-    projectsArr: [],
+    name: projectName,
+    todos: [],
   };
 }
